@@ -190,6 +190,15 @@ h3{font-size:1.3rem;letter-spacing:-0.01em;line-height:1.2;}
 .badge{display:inline-flex;align-items:center;gap:0.55rem;background:var(--card);border:1px solid var(--line);border-radius:999px;padding:0.4rem 0.9rem 0.4rem 0.4rem;font-size:0.9rem;}
 .badge i{width:30px;height:30px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-style:normal;font-family:var(--head);font-weight:700;font-size:0.75rem;background:radial-gradient(circle at 35% 30%,#FFE6CF,var(--apricot) 70%);}
 
+/* Certifications */
+.certs-title{font-size:1.2rem;margin-top:2.25rem;}
+.certs{list-style:none;margin-top:0.75rem;border-top:1px solid var(--line);}
+.certs li{display:flex;justify-content:space-between;align-items:center;gap:1rem;padding:0.8rem 0;border-bottom:1px solid var(--line);}
+.certs span{font-size:0.88rem;color:var(--ink-soft);line-height:1.45;}
+.certs b{display:block;font-size:0.98rem;font-weight:600;color:var(--ink);}
+.cert-status{flex-shrink:0;font-style:normal;font-size:0.8rem;font-weight:600;color:var(--ink-soft);background:var(--card);border:1px solid var(--line);border-radius:999px;padding:0.2rem 0.7rem;}
+.cert-status.now{color:var(--rose-deep);border-color:var(--rose);}
+
 /* Outils */
 .tools{display:grid;gap:1.25rem;margin-top:2rem;}
 .tools h3{font-size:1.1rem;}
@@ -345,7 +354,7 @@ footer{background:var(--ink);color:#A48F8B;font-size:0.82rem;padding:1.5rem 0;bo
             <p>Cheffe de projet d'une plateforme de révision contre l'isolement étudiant : enquête auprès de 100 étudiants, personas, maquettes, business model.</p>
           </div>
           <div class="moment">
-            <p class="moment-meta">Stage, mai – juin 2025</p>
+            <p class="moment-meta">Stage, avril – juin 2025</p>
             <h3>Business Analyst, performance et données</h3>
             <p>Dans une marque de cosmétiques : 3 tableaux de bord Excel, un reporting hebdomadaire et une base produits fiabilisée.</p>
           </div>
@@ -443,9 +452,17 @@ footer{background:var(--ink);color:#A48F8B;font-size:0.82rem;padding:1.5rem 0;bo
           <span class="badge"><i aria-hidden="true">IAE</i>Représentante de l'IAE Lyon depuis 2023</span>
           <span class="badge"><i aria-hidden="true">PC</i>Jurée du Prix Caméléon, Lyon 3</span>
         </div>
+        <h3 class="certs-title">Formations et certifications</h3>
+        <ul class="certs">
+          <li><span><b>Microsoft PL-300 – Power BI &amp; Data Analytics</b>Microsoft</span><em class="cert-status now">En cours</em></li>
+          <li><span><b>Scrum Fundamentals – Agile &amp; Scrum</b>Méthodes agiles</span><em class="cert-status now">En cours</em></li>
+          <li><span><b>Savoir-être professionnels</b>Université Jean Moulin Lyon 3, Open Badge, janvier 2025</span><em class="cert-status">Obtenue</em></li>
+          <li><span><b>Découvrir l'IA générative</b>Certification en ligne</span><em class="cert-status">Obtenue</em></li>
+          <li><span><b>L'essentiel d'Excel (Microsoft 365)</b>Certification en ligne</span><em class="cert-status">Obtenue</em></li>
+        </ul>
         <div class="tools">
           <div><h3>Pour comprendre</h3><p>Recueil des besoins, modélisation des processus, UML, MCD/MLD, méthodes agiles.</p></div>
-          <div><h3>Pour construire</h3><p>SQL, Excel, Figma, Lucidchart, Trello. En cours : ERP (formation SAP), Power BI, Jira.</p></div>
+          <div><h3>Pour construire</h3><p>SQL, Excel, Figma, Lucidchart, Trello. En cours : Power BI (certification PL-300), Jira.</p></div>
           <div><h3>Pour échanger</h3><p>Français, arabe (C1), anglais (B2), espagnol (A2).</p></div>
         </div>
         <p class="bridge"><a href="#contact" aria-label="Aller à la suite"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14m0 0l-6-6m6 6l6-6"/></svg></a><span>Le prochain chapitre, j'aimerais <em>l'écrire avec vous</em>.</span></p>
